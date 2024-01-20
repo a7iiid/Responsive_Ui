@@ -1,13 +1,12 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
-import 'package:adaptiv_layout/fetuers/dashbord/model/ExpensesItemModel.dart';
+import 'package:adaptiv_layout/fetuers/expenses/model/ExpensesItemModel.dart';
+import 'package:adaptiv_layout/fetuers/expenses/widget/header_expenses.dart';
+import 'package:adaptiv_layout/fetuers/expenses/widget/list_all_expenses_item.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/utlis/images.dart';
-import '../widget/expensesitem.dart';
-import '../widget/header_expenses.dart';
-import '../widget/list_all_expenses_item.dart';
 
 class AllExpenses extends StatelessWidget {
   AllExpenses({super.key});
@@ -31,6 +30,9 @@ class AllExpenses extends StatelessWidget {
                 height: 16,
               ),
               ListAllExpensesItem(),
+              const SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ),

@@ -1,4 +1,4 @@
-import 'package:adaptiv_layout/fetuers/dashbord/view/expenses.dart';
+import 'package:adaptiv_layout/fetuers/expenses/view/expenses.dart';
 import 'package:adaptiv_layout/fetuers/dashbord/widget/customdrawer.dart';
 import 'package:flutter/material.dart';
 

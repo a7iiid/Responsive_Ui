@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:adaptiv_layout/fetuers/dashbord/model/listTileModel.dart';
+import 'package:adaptiv_layout/fetuers/draower/model/listTileModel.dart';
 import 'package:adaptiv_layout/core/utlis/images.dart';
 import 'package:adaptiv_layout/fetuers/dashbord/widget/CustomListTile.dart';
 import 'package:flutter/material.dart';

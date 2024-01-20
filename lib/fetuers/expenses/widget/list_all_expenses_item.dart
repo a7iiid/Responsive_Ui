@@ -1,5 +1,5 @@
-import 'package:adaptiv_layout/fetuers/dashbord/model/ExpensesItemModel.dart';
-import 'package:adaptiv_layout/fetuers/dashbord/widget/expensesitem.dart';
+import 'package:adaptiv_layout/fetuers/expenses/model/ExpensesItemModel.dart';
+import 'package:adaptiv_layout/fetuers/expenses/widget/expensesitem.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/utlis/images.dart';

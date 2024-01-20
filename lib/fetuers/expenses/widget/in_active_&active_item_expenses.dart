@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
-import 'package:adaptiv_layout/fetuers/dashbord/model/ExpensesItemModel.dart';
+import 'package:adaptiv_layout/fetuers/expenses/model/ExpensesItemModel.dart';
 
 import 'header_expenses_item.dart';
 

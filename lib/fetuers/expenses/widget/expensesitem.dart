@@ -1,9 +1,9 @@
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
-import 'package:adaptiv_layout/fetuers/dashbord/model/ExpensesItemModel.dart';
+import 'package:adaptiv_layout/fetuers/expenses/model/ExpensesItemModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'in_active_&active_item_expenses.dart';
+import '../../expenses/widget/in_active_&active_item_expenses.dart';
 
 class ExpensesItem extends StatelessWidget {
   ExpensesItem(

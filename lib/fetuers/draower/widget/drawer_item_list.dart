@@ -1,4 +1,4 @@
-import 'package:adaptiv_layout/fetuers/dashbord/model/listTileModel.dart';
+import 'package:adaptiv_layout/fetuers/draower/model/listTileModel.dart';
 import 'package:adaptiv_layout/fetuers/dashbord/widget/CustomListTile.dart';
 import 'package:flutter/material.dart';
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
