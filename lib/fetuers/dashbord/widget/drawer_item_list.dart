@@ -3,17 +3,24 @@ import 'package:adaptiv_layout/fetuers/dashbord/widget/CustomListTile.dart';
 import 'package:flutter/material.dart';
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
 
+import '../../../core/utlis/images.dart';
+
 class drawer_item_list extends StatefulWidget {
   const drawer_item_list({
     super.key,
-    required this.listtile,
   });
-
-  final List<ListTileModel> listtile;
 
   @override
   State<drawer_item_list> createState() => _drawer_item_listState();
 }
+
+const List<ListTileModel> listtile = [
+  ListTileModel('Dashbore', Assets.imagesDashbord),
+  ListTileModel('My Transaction', Assets.imagesMytransaction),
+  ListTileModel('Statistics', Assets.imagesStatistics),
+  ListTileModel('Wallet Account', Assets.imagesWallet2),
+  ListTileModel('Invismant', Assets.imagesMyInvestments)
+];
 
 class _drawer_item_listState extends State<drawer_item_list> {
   @override
@@ -25,25 +32,24 @@ class _drawer_item_listState extends State<drawer_item_list> {
           if (index != SelectIndex) {
             setState(() {
               SelectIndex = index;
-              print(SelectIndex);
             });
           }
         },
         child: CustomListTile(
-            title: widget.listtile[index].name,
-            leading: widget.listtile[index].image,
+            title: listtile[index].name,
+            leading: listtile[index].image,
             titleStile: SelectStyle(index, SelectIndex)),
       ),
-      itemCount: widget.listtile.length,
+      itemCount: listtile.length,
     );
   }
 }
 
 TextStyle SelectStyle(int index, int SelectIndex) {
   if (index == SelectIndex)
-    return stayl.StyleBold16;
+    return style.StyleBold16;
   else
-    return stayl.StyleRegular16;
+    return style.StyleRegular16;
 }
 // CustomListTile(
 //               title: 'Dashbore',

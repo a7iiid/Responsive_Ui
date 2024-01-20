@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 
-abstract class stayl {
+abstract class style {
   // ignore: constant_identifier_names
   static const TextStyle StyleRegular16 = TextStyle(
     fontFamily: "Montserrat",
