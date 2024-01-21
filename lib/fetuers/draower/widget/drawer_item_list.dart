@@ -1,5 +1,5 @@
 import 'package:adaptiv_layout/fetuers/draower/model/listTileModel.dart';
-import 'package:adaptiv_layout/fetuers/dashbord/widget/CustomListTile.dart';
+import 'package:adaptiv_layout/fetuers/draower/widget/CustomListTile.dart';
 import 'package:flutter/material.dart';
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
 
@@ -47,9 +47,9 @@ class _drawer_item_listState extends State<drawer_item_list> {
 
 TextStyle SelectStyle(int index, int SelectIndex) {
   if (index == SelectIndex)
-    return style.StyleBold16;
+    return AppStyle.StyleBold16;
   else
-    return style.StyleRegular16;
+    return AppStyle.StyleRegular16;
 }
 // CustomListTile(
 //               title: 'Dashbore',

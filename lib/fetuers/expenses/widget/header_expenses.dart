@@ -17,8 +17,8 @@ class HeaderExpenses extends StatelessWidget {
         children: [
           Text(
             'All Expenses',
-            style:
-                style.StyleSemiBold20.copyWith(color: const Color(0xff064061)),
+            style: AppStyle.StyleSemiBold20.copyWith(
+                color: const Color(0xff064061)),
           ),
           const Expanded(child: SizedBox()),
           Container(
@@ -30,7 +30,7 @@ class HeaderExpenses extends StatelessWidget {
               children: [
                 Text(
                   "Month",
-                  style: style.StyleMedium16.copyWith(
+                  style: AppStyle.StyleMedium16.copyWith(
                       color: const Color(0xff064061)),
                 ),
                 const SizedBox(

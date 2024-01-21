@@ -1,12 +1,14 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:adaptiv_layout/core/utlis/model/user_info_model.dart';
 import 'package:adaptiv_layout/fetuers/draower/model/listTileModel.dart';
 import 'package:adaptiv_layout/core/utlis/images.dart';
-import 'package:adaptiv_layout/fetuers/dashbord/widget/CustomListTile.dart';
+import 'package:adaptiv_layout/fetuers/draower/widget/CustomListTile.dart';
 import 'package:flutter/material.dart';
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
 
-import 'drawer_item_list.dart';
+import '../../draower/widget/drawer_item_list.dart';
+import 'user_profile_info.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -24,12 +26,13 @@ class CustomDrawer extends StatelessWidget {
               child: Card(
                 elevation: 0.0,
                 color: Color(0xffFAFAFA),
-                child: profileInfo(
-                    title: 'Ahmad nazzal',
-                    subtitel: 'naz131681@gmail.com',
-                    leading: (Assets.imagesFrame),
-                    titleStile: style.StyleBold16,
-                    subTitleStyle: style.StyleRegular12),
+                child: UserProfileInfo(
+                  item: UserInfoModel(
+                    'Ahmad nazzal',
+                    'naz131681@gmail.com',
+                    Assets.imagesFrame,
+                  ),
+                ),
               ),
             ),
           ),
@@ -41,11 +44,11 @@ class CustomDrawer extends StatelessWidget {
               CustomListTile(
                   title: 'Settinges ',
                   leading: Assets.imagesSetting,
-                  titleStile: style.StyleRegular16),
+                  titleStile: AppStyle.StyleRegular16),
               CustomListTile(
                   title: 'Log out',
                   leading: Assets.imagesLogout,
-                  titleStile: style.StyleRegular16),
+                  titleStile: AppStyle.StyleRegular16),
               SizedBox(
                 height: 48,
               )
