@@ -1,5 +1,6 @@
+import 'package:adaptiv_layout/fetuers/card/view/pyment.dart';
 import 'package:adaptiv_layout/fetuers/draower/widget/customdrawer.dart';
-import 'package:adaptiv_layout/fetuers/expenses/view/expenses.dart';
+import 'package:adaptiv_layout/fetuers/expenses/view/AllExpenses_QuickInvoice.dart';
 import 'package:flutter/material.dart';
 
 class DashbordWebLaout extends StatelessWidget {
@@ -13,10 +14,8 @@ class DashbordWebLaout extends StatelessWidget {
         const SizedBox(
           width: 32,
         ),
-        Expanded(flex: 2, child: AllExpenses()),
-        const SizedBox(
-          width: 24,
-        ),
+        Expanded(flex: 2, child: AllExpenses_QuickInvoice()),
+        Expanded(child: Pyment())
       ],
     );
   }
