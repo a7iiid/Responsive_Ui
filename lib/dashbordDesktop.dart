@@ -15,7 +15,7 @@ class DashbordWebLaout extends StatelessWidget {
           width: 32,
         ),
         Expanded(flex: 2, child: AllExpenses_QuickInvoice()),
-        Expanded(child: Pyment())
+        const Expanded(child: Pyment())
       ],
     );
   }

@@ -1,4 +1,4 @@
-import 'package:adaptiv_layout/fetuers/card/widget/card.dart';
+import 'package:adaptiv_layout/fetuers/card/widget/card/card.dart';
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 

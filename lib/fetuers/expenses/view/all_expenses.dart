@@ -11,10 +11,7 @@ class AllExpenses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12), color: Color(0xffFFFFFF)),
+    return CustomContainer(
       child: Column(
         children: [
           const HeaderExpenses(),
@@ -27,6 +24,24 @@ class AllExpenses extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class CustomContainer extends StatelessWidget {
+  CustomContainer({
+    super.key,
+    required this.child,
+  });
+  Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12), color: Color(0xffFFFFFF)),
+      child: child,
     );
   }
 }

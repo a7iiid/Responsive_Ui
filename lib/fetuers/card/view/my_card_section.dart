@@ -1,6 +1,6 @@
 import 'package:adaptiv_layout/core/utlis/AppStyle.dart';
-import 'package:adaptiv_layout/fetuers/card/widget/dote_indecater.dart';
-import 'package:adaptiv_layout/fetuers/card/widget/page_view.dart';
+import 'package:adaptiv_layout/fetuers/card/widget/card/dote_indecater.dart';
+import 'package:adaptiv_layout/fetuers/card/widget/card/page_view.dart';
 import 'package:flutter/material.dart';
 
 class MyCardSection extends StatefulWidget {

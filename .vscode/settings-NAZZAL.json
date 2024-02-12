@@ -1,0 +1,21 @@
+{
+    "editor.codeActionsOnSave": {
+
+    },
+    "remote.portsAttributes": {
+
+
+
+        "443": {
+            "protocol": "https"
+        },
+        "8443": {
+            "protocol": "https"
+        }
+    },
+    "dart.enableCompletionCommitCharacters": true,
+    "markdown.styles": [
+        "/"
+    ],
+    "CodeGPT.apiKey": "OpenAI"
+}
